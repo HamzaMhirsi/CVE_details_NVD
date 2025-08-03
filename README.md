@@ -91,8 +91,6 @@ Application Name,CVE ID,CVSS Score
 ├── after ai/
 │   ├── main.py                    # Advanced CVE fetcher
 │   └── test_main.py               # Comprehensive tests
-├── CVE_details_NVD/
-│   └── README.md                  # Original project documentation
 ├── json.json                      # Sample NVD API response
 └── README.md                      # This file
 ```
