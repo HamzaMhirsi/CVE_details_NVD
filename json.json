@@ -1,0 +1,1723 @@
+{
+    "resultsPerPage": 13,
+    "startIndex": 0,
+    "totalResults": 13,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2025-08-03T23:07:39.431",
+    "vulnerabilities": [
+      {
+        "cve": {
+          "id": "CVE-2012-6369",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2012-12-28T11:48:44.720",
+          "lastModified": "2025-04-11T00:51:21.963",
+          "vulnStatus": "Deferred",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "Cross-site scripting (XSS) vulnerability in the Troubleshooting Reporting System feature in AgileBits 1Password 3.9.9 might allow remote attackers to inject arbitrary web script or HTML via a crafted User-Agent HTTP header that is not properly handled in a View Troubleshooting Report action."
+            },
+            {
+              "lang": "es",
+              "value": "Una vulnerabilidad de ejecución de comandos en sitios cruzados (XSS) en el Sistema de Solución de Problemas en AgileBits 1Password v3.9.9 podría permitir a atacantes remotos inyectar secuencias de comandos web o HTML a través de una cabecera HTTP User-Agent modificada que no gestionada adecuadamente en una acción \"Ver informe de solución de problemas\".\r\n"
+            }
+          ],
+          "metrics": {
+            "cvssMetricV2": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "2.0",
+                  "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                  "baseScore": 4.3,
+                  "accessVector": "NETWORK",
+                  "accessComplexity": "MEDIUM",
+                  "authentication": "NONE",
+                  "confidentialityImpact": "NONE",
+                  "integrityImpact": "PARTIAL",
+                  "availabilityImpact": "NONE"
+                },
+                "baseSeverity": "MEDIUM",
+                "exploitabilityScore": 8.6,
+                "impactScore": 2.9,
+                "acInsufInfo": false,
+                "obtainAllPrivilege": false,
+                "obtainUserPrivilege": false,
+                "obtainOtherPrivilege": false,
+                "userInteractionRequired": true
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "CWE-79"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:3.9.9:*:*:*:*:*:*:*",
+                      "matchCriteriaId": "96ADD35A-9A05-48EB-8851-52B383B9F5F2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "http://packetstormsecurity.org/files/118467/Agilebits-1Password-3.9.9-Cross-Site-Scripting.html",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Exploit"
+              ]
+            },
+            {
+              "url": "http://www.youtube.com/watch?v=A1kPL9ggRi4",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Exploit"
+              ]
+            },
+            {
+              "url": "http://packetstormsecurity.org/files/118467/Agilebits-1Password-3.9.9-Cross-Site-Scripting.html",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Exploit"
+              ]
+            },
+            {
+              "url": "http://www.youtube.com/watch?v=A1kPL9ggRi4",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Exploit"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "cve": {
+          "id": "CVE-2018-13042",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2018-10-05T21:29:00.997",
+          "lastModified": "2024-11-21T03:46:17.987",
+          "vulnStatus": "Modified",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "The 1Password application 6.8 for Android is affected by a Denial Of Service vulnerability. By starting the activity com.agilebits.onepassword.filling.openyolo.OpenYoloDeleteActivity or com.agilebits.onepassword.filling.openyolo.OpenYoloRetrieveActivity from an external application (since they are exported), it is possible to crash the 1Password instance."
+            },
+            {
+              "lang": "es",
+              "value": "La aplicación 1Password 6.8 para Android se ha visto afectada por una vulnerabilidad de denegación de servicio (DoS). Al comenzar las actividades com.agilebits.onepassword.filling.openyolo.OpenYoloDeleteActivity o com.agilebits.onepassword.filling.openyolo.OpenYoloRetrieveActivity desde una aplicación externa (ya que están exportadas), es posible provocar el cierre inesperado de la instancia de 1Password."
+            }
+          ],
+          "metrics": {
+            "cvssMetricV30": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "3.0",
+                  "vectorString": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                  "baseScore": 5.9,
+                  "baseSeverity": "MEDIUM",
+                  "attackVector": "NETWORK",
+                  "attackComplexity": "HIGH",
+                  "privilegesRequired": "NONE",
+                  "userInteraction": "NONE",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "NONE",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "HIGH"
+                },
+                "exploitabilityScore": 2.2,
+                "impactScore": 3.6
+              }
+            ],
+            "cvssMetricV2": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "2.0",
+                  "vectorString": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+                  "baseScore": 4.3,
+                  "accessVector": "NETWORK",
+                  "accessComplexity": "MEDIUM",
+                  "authentication": "NONE",
+                  "confidentialityImpact": "NONE",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "PARTIAL"
+                },
+                "baseSeverity": "MEDIUM",
+                "exploitabilityScore": 8.6,
+                "impactScore": 2.9,
+                "acInsufInfo": false,
+                "obtainAllPrivilege": false,
+                "obtainUserPrivilege": false,
+                "obtainOtherPrivilege": false,
+                "userInteractionRequired": false
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "CWE-20"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:6.8:*:*:*:*:android:*:*",
+                      "matchCriteriaId": "5E767604-08FF-46D6-B558-F0D3851E9AA3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "https://app-updates.agilebits.com/product_history/OPA4",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://www.exploit-db.com/exploits/46165/",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Third Party Advisory",
+                "VDB Entry"
+              ]
+            },
+            {
+              "url": "https://www.valbrux.it/blog/2019/01/22/cve-2018-13042-1password-android-7-0-denial-of-service/",
+              "source": "cve@mitre.org"
+            },
+            {
+              "url": "https://app-updates.agilebits.com/product_history/OPA4",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://www.exploit-db.com/exploits/46165/",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Third Party Advisory",
+                "VDB Entry"
+              ]
+            },
+            {
+              "url": "https://www.valbrux.it/blog/2019/01/22/cve-2018-13042-1password-android-7-0-denial-of-service/",
+              "source": "af854a3a-2127-422b-91ae-364da2661108"
+            }
+          ]
+        }
+      },
+      {
+        "cve": {
+          "id": "CVE-2018-19863",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2018-12-22T15:29:00.230",
+          "lastModified": "2024-11-21T03:58:42.730",
+          "vulnStatus": "Modified",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "An issue was discovered in 1Password 7.2.3.BETA before 7.2.3.BETA-3 on macOS. A mistake in error logging resulted in instances where sensitive data passed from Safari to 1Password could be logged locally on the user's machine. This data could include usernames and passwords that a user manually entered into Safari."
+            },
+            {
+              "lang": "es",
+              "value": "Se ha descubierto un problema en 1Password, en versiones 7.2.3.BETA anteriores a la 7.2.3.BETA-3 en macOS. Un error en el registro de errores resultó en instancias en las que los datos sensibles pasados desde Safari a 1Password podrían registrarse de forma local en la máquina del usuario. Estos datos podrían incluir nombres de usuario y contraseñas que un usuario introdujo manualmente en Safari."
+            }
+          ],
+          "metrics": {
+            "cvssMetricV30": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "3.0",
+                  "vectorString": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                  "baseScore": 5.5,
+                  "baseSeverity": "MEDIUM",
+                  "attackVector": "LOCAL",
+                  "attackComplexity": "LOW",
+                  "privilegesRequired": "LOW",
+                  "userInteraction": "NONE",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "HIGH",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "NONE"
+                },
+                "exploitabilityScore": 1.8,
+                "impactScore": 3.6
+              }
+            ],
+            "cvssMetricV2": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "2.0",
+                  "vectorString": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+                  "baseScore": 2.1,
+                  "accessVector": "LOCAL",
+                  "accessComplexity": "LOW",
+                  "authentication": "NONE",
+                  "confidentialityImpact": "PARTIAL",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "NONE"
+                },
+                "baseSeverity": "LOW",
+                "exploitabilityScore": 3.9,
+                "impactScore": 2.9,
+                "acInsufInfo": false,
+                "obtainAllPrivilege": false,
+                "obtainUserPrivilege": false,
+                "obtainOtherPrivilege": false,
+                "userInteractionRequired": false
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "CWE-532"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:agilebits:1password:7.2.3:beta0:*:*:*:mac_os_x:*:*",
+                      "matchCriteriaId": "FB6F306D-C744-45F6-A19E-00C4B0C96E66"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:agilebits:1password:7.2.3:beta1:*:*:*:mac_os_x:*:*",
+                      "matchCriteriaId": "AC95E42A-EA22-4604-B863-9A63DC5A5022"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:agilebits:1password:7.2.3:beta2:*:*:*:mac_os_x:*:*",
+                      "matchCriteriaId": "368CE697-14E0-46E7-BF54-396C53E53F5E"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "https://app-updates.agilebits.com/product_history/OPM7#v70203009",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Release Notes",
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://discussions.agilebits.com/discussion/99429/the-security-content-of=-betas-7-2-3-beta-3-and-7-2-3-beta-4/p1?new=3D1",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/kb/201812/",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://app-updates.agilebits.com/product_history/OPM7#v70203009",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Release Notes",
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://discussions.agilebits.com/discussion/99429/the-security-content-of=-betas-7-2-3-beta-3-and-7-2-3-beta-4/p1?new=3D1",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/kb/201812/",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "cve": {
+          "id": "CVE-2014-3753",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2020-01-09T14:15:11.420",
+          "lastModified": "2024-11-21T02:08:46.567",
+          "vulnStatus": "Modified",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "AgileBits 1Password through 1.0.9.340 allows security feature bypass"
+            },
+            {
+              "lang": "es",
+              "value": "AgileBits 1Password por medio de 1.0.9.340, permite omitir la característica de seguridad."
+            }
+          ],
+          "metrics": {
+            "cvssMetricV31": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "3.1",
+                  "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+                  "baseScore": 5.5,
+                  "baseSeverity": "MEDIUM",
+                  "attackVector": "LOCAL",
+                  "attackComplexity": "LOW",
+                  "privilegesRequired": "NONE",
+                  "userInteraction": "REQUIRED",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "HIGH",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "NONE"
+                },
+                "exploitabilityScore": 1.8,
+                "impactScore": 3.6
+              }
+            ],
+            "cvssMetricV2": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "2.0",
+                  "vectorString": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+                  "baseScore": 4.3,
+                  "accessVector": "NETWORK",
+                  "accessComplexity": "MEDIUM",
+                  "authentication": "NONE",
+                  "confidentialityImpact": "PARTIAL",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "NONE"
+                },
+                "baseSeverity": "MEDIUM",
+                "exploitabilityScore": 8.6,
+                "impactScore": 2.9,
+                "acInsufInfo": false,
+                "obtainAllPrivilege": false,
+                "obtainUserPrivilege": false,
+                "obtainOtherPrivilege": false,
+                "userInteractionRequired": true
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "CWE-200"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:windows:*:*",
+                      "versionEndIncluding": "1.0.9.340",
+                      "matchCriteriaId": "DD89D5C9-BDA0-459A-9468-C9ED3975578C"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=18986",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Exploit",
+                "Third Party Advisory"
+              ]
+            },
+            {
+              "url": "https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=18986",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Exploit",
+                "Third Party Advisory"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "cve": {
+          "id": "CVE-2020-10256",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2020-10-27T14:15:13.453",
+          "lastModified": "2024-11-21T04:55:04.880",
+          "vulnStatus": "Modified",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "An issue was discovered in beta versions of the 1Password command-line tool prior to 0.5.5 and in beta versions of the 1Password SCIM bridge prior to 0.7.3. An insecure random number generator was used to generate various keys. An attacker with access to the user's encrypted data may be able to perform brute-force calculations of encryption keys and thus succeed at decryption."
+            },
+            {
+              "lang": "es",
+              "value": "Se detectó un problema en las versiones beta de la herramienta de línea de comandos 1Password versiones anteriores a 0.5.5 y en las versiones beta de 1Password SCIM bridge anteriores a 0.7.3.&#xa0;Se usó un generador de números aleatorios no seguro para generar varias claves.&#xa0;Un atacante con acceso a los datos cifrados del usuario puede ser capaz de llevar a cabo cálculos de fuerza bruta de las claves de cifrado y, por lo tanto, tener éxito en el descifrado"
+            }
+          ],
+          "metrics": {
+            "cvssMetricV31": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "3.1",
+                  "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                  "baseScore": 9.8,
+                  "baseSeverity": "CRITICAL",
+                  "attackVector": "NETWORK",
+                  "attackComplexity": "LOW",
+                  "privilegesRequired": "NONE",
+                  "userInteraction": "NONE",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "HIGH",
+                  "integrityImpact": "HIGH",
+                  "availabilityImpact": "HIGH"
+                },
+                "exploitabilityScore": 3.9,
+                "impactScore": 5.9
+              }
+            ],
+            "cvssMetricV2": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "2.0",
+                  "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                  "baseScore": 5,
+                  "accessVector": "NETWORK",
+                  "accessComplexity": "LOW",
+                  "authentication": "NONE",
+                  "confidentialityImpact": "PARTIAL",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "NONE"
+                },
+                "baseSeverity": "MEDIUM",
+                "exploitabilityScore": 10,
+                "impactScore": 2.9,
+                "acInsufInfo": false,
+                "obtainAllPrivilege": false,
+                "obtainUserPrivilege": false,
+                "obtainOtherPrivilege": false,
+                "userInteractionRequired": false
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "NVD-CWE-noinfo"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:command_line_interface:*:*:*:*:*:*:*:*",
+                      "versionEndExcluding": "0.5.5",
+                      "matchCriteriaId": "484F47D7-8C0A-49C3-BA28-5C4360B5EAD9"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:scim:*:*:*:*:*:*:*:*",
+                      "versionEndExcluding": "0.7.3",
+                      "matchCriteriaId": "56C5FD73-B4EC-492A-ACE3-D199644842A6"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "https://support.1password.com/command-line/",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/kb/202010/",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/scim/",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/command-line/",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/kb/202010/",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/scim/",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "cve": {
+          "id": "CVE-2021-26905",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2021-02-08T20:15:12.963",
+          "lastModified": "2024-11-21T05:57:00.683",
+          "vulnStatus": "Modified",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "1Password SCIM Bridge before 1.6.2 mishandles validation of authenticated requests for log files, leading to disclosure of a TLS private key."
+            },
+            {
+              "lang": "es",
+              "value": "1Password SCIM Bridge versiones anteriores a 1.6.2, maneja inapropiadamente la comprobación de las solicitudes autenticadas de archivos de registro, lo que lleva a la divulgación de una clave privada TLS"
+            }
+          ],
+          "metrics": {
+            "cvssMetricV31": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "3.1",
+                  "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                  "baseScore": 6.5,
+                  "baseSeverity": "MEDIUM",
+                  "attackVector": "NETWORK",
+                  "attackComplexity": "LOW",
+                  "privilegesRequired": "LOW",
+                  "userInteraction": "NONE",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "HIGH",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "NONE"
+                },
+                "exploitabilityScore": 2.8,
+                "impactScore": 3.6
+              }
+            ],
+            "cvssMetricV2": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "2.0",
+                  "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                  "baseScore": 4,
+                  "accessVector": "NETWORK",
+                  "accessComplexity": "LOW",
+                  "authentication": "SINGLE",
+                  "confidentialityImpact": "PARTIAL",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "NONE"
+                },
+                "baseSeverity": "MEDIUM",
+                "exploitabilityScore": 8,
+                "impactScore": 2.9,
+                "acInsufInfo": false,
+                "obtainAllPrivilege": false,
+                "obtainUserPrivilege": false,
+                "obtainOtherPrivilege": false,
+                "userInteractionRequired": false
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "CWE-287"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:scim_bridge:*:*:*:*:*:*:*:*",
+                      "versionStartIncluding": "1.0.0",
+                      "versionEndExcluding": "1.6.2",
+                      "matchCriteriaId": "6037B3C9-BCA4-45DA-9E45-ED2F182EB2B6"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "https://app-updates.agilebits.com/product_history/SCIM",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Release Notes",
+                "Third Party Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/kb/202102/",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Mitigation",
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://app-updates.agilebits.com/product_history/SCIM",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Release Notes",
+                "Third Party Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/kb/202102/",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Mitigation",
+                "Vendor Advisory"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "cve": {
+          "id": "CVE-2021-36758",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2021-07-16T00:15:07.773",
+          "lastModified": "2024-11-21T06:14:01.957",
+          "vulnStatus": "Modified",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "1Password Connect server before 1.2 is missing validation checks, permitting users to create Secrets Automation access tokens that can be used to perform privilege escalation. Malicious users authorized to create Secrets Automation access tokens can create tokens that have access beyond what the user is authorized to access, but limited to the existing authorizations of the Secret Automation the token is created in."
+            },
+            {
+              "lang": "es",
+              "value": "El servidor de 1Password Connect anterior a la versión 1.2 carece de comprobaciones de validación, lo que permite a los usuarios crear tokens de acceso de Automatización de Secretos que pueden utilizarse para realizar una escalada de privilegios. Los usuarios malintencionados autorizados a crear tokens de acceso a la Automatización de Secretos pueden crear tokens que tienen acceso más allá de lo que el usuario está autorizado a acceder, pero limitado a las autorizaciones existentes de la Automatización de Secretos en la que se crea el token"
+            }
+          ],
+          "metrics": {
+            "cvssMetricV31": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "3.1",
+                  "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+                  "baseScore": 5.4,
+                  "baseSeverity": "MEDIUM",
+                  "attackVector": "NETWORK",
+                  "attackComplexity": "LOW",
+                  "privilegesRequired": "LOW",
+                  "userInteraction": "NONE",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "LOW",
+                  "integrityImpact": "LOW",
+                  "availabilityImpact": "NONE"
+                },
+                "exploitabilityScore": 2.8,
+                "impactScore": 2.5
+              }
+            ],
+            "cvssMetricV2": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "2.0",
+                  "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+                  "baseScore": 5.5,
+                  "accessVector": "NETWORK",
+                  "accessComplexity": "LOW",
+                  "authentication": "SINGLE",
+                  "confidentialityImpact": "PARTIAL",
+                  "integrityImpact": "PARTIAL",
+                  "availabilityImpact": "NONE"
+                },
+                "baseSeverity": "MEDIUM",
+                "exploitabilityScore": 8,
+                "impactScore": 4.9,
+                "acInsufInfo": false,
+                "obtainAllPrivilege": false,
+                "obtainUserPrivilege": false,
+                "obtainOtherPrivilege": false,
+                "userInteractionRequired": false
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "CWE-20"
+                },
+                {
+                  "lang": "en",
+                  "value": "CWE-863"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:connect:*:*:*:*:*:*:*:*",
+                      "versionEndExcluding": "1.2",
+                      "matchCriteriaId": "B2038125-88DB-4C71-8F7E-DCCD4164766B"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "https://support.1password.com/kb/202106/",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Patch",
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/kb/202106/",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Patch",
+                "Vendor Advisory"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "cve": {
+          "id": "CVE-2020-18173",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2021-07-26T20:15:08.250",
+          "lastModified": "2024-11-21T05:08:27.730",
+          "vulnStatus": "Modified",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "A DLL injection vulnerability in 1password.dll of 1Password 7.3.712 allows attackers to execute arbitrary code."
+            },
+            {
+              "lang": "es",
+              "value": "Una vulnerabilidad de inyección de DLL en la biblioteca 1password.dll de 1Password versión 7.3.712, permite a atacantes ejecutar código arbitrario"
+            }
+          ],
+          "metrics": {
+            "cvssMetricV31": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "3.1",
+                  "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                  "baseScore": 7.8,
+                  "baseSeverity": "HIGH",
+                  "attackVector": "LOCAL",
+                  "attackComplexity": "LOW",
+                  "privilegesRequired": "NONE",
+                  "userInteraction": "REQUIRED",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "HIGH",
+                  "integrityImpact": "HIGH",
+                  "availabilityImpact": "HIGH"
+                },
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.9
+              }
+            ],
+            "cvssMetricV2": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "2.0",
+                  "vectorString": "AV:L/AC:M/Au:N/C:P/I:P/A:P",
+                  "baseScore": 4.4,
+                  "accessVector": "LOCAL",
+                  "accessComplexity": "MEDIUM",
+                  "authentication": "NONE",
+                  "confidentialityImpact": "PARTIAL",
+                  "integrityImpact": "PARTIAL",
+                  "availabilityImpact": "PARTIAL"
+                },
+                "baseSeverity": "MEDIUM",
+                "exploitabilityScore": 3.4,
+                "impactScore": 6.4,
+                "acInsufInfo": false,
+                "obtainAllPrivilege": false,
+                "obtainUserPrivilege": false,
+                "obtainOtherPrivilege": false,
+                "userInteractionRequired": true
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "CWE-427"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:7.3.712:*:*:*:*:windows:*:*",
+                      "matchCriteriaId": "17E39C22-3E5C-4F4E-8ECB-A0A45F4D2D2C"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "https://github.com/GitHubAssessments/CVE_Assessments_11_2019",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Exploit",
+                "Third Party Advisory"
+              ]
+            },
+            {
+              "url": "https://github.com/GitHubAssessments/CVE_Assessments_11_2019",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Exploit",
+                "Third Party Advisory"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "cve": {
+          "id": "CVE-2021-41795",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2021-09-29T21:15:07.653",
+          "lastModified": "2024-11-21T06:26:46.660",
+          "vulnStatus": "Modified",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "The Safari app extension bundled with 1Password for Mac 7.7.0 through 7.8.x before 7.8.7 is vulnerable to authorization bypass. By targeting a vulnerable component of this extension, a malicious web page could read a subset of 1Password vault items that would normally be fillable by the user on that web page. These items are usernames and passwords for vault items associated with its domain, usernames and passwords without a domain association, credit cards, and contact items. (1Password must be unlocked for these items to be accessible, but no further user interaction is required.)"
+            },
+            {
+              "lang": "es",
+              "value": "La extensión de la aplicación Safari incluida en 1Password para Mac versiones 7.7.0 hasta 7.8.x anteriores a 7.8.7, es vulnerable a una omisión de autorización. Al dirigirse a un componente vulnerable de esta extensión, una página web maliciosa podría leer un subconjunto de elementos del almacén de 1Password que normalmente podría rellenar el usuario en esa página web. Estos elementos son los nombres de usuario y las contraseñas de los elementos del almacén asociados a su dominio, los nombres de usuario y las contraseñas sin asociación de dominio, las tarjetas de crédito y los elementos de contacto. (1Password debe estar desbloqueado para que estos elementos sean accesibles, pero no es requerida ninguna otra interacción del usuario)"
+            }
+          ],
+          "metrics": {
+            "cvssMetricV31": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "3.1",
+                  "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+                  "baseScore": 6.5,
+                  "baseSeverity": "MEDIUM",
+                  "attackVector": "NETWORK",
+                  "attackComplexity": "LOW",
+                  "privilegesRequired": "NONE",
+                  "userInteraction": "REQUIRED",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "HIGH",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "NONE"
+                },
+                "exploitabilityScore": 2.8,
+                "impactScore": 3.6
+              }
+            ],
+            "cvssMetricV2": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "2.0",
+                  "vectorString": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+                  "baseScore": 4.3,
+                  "accessVector": "NETWORK",
+                  "accessComplexity": "MEDIUM",
+                  "authentication": "NONE",
+                  "confidentialityImpact": "PARTIAL",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "NONE"
+                },
+                "baseSeverity": "MEDIUM",
+                "exploitabilityScore": 8.6,
+                "impactScore": 2.9,
+                "acInsufInfo": false,
+                "obtainAllPrivilege": false,
+                "obtainUserPrivilege": false,
+                "obtainOtherPrivilege": false,
+                "userInteractionRequired": true
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "NVD-CWE-noinfo"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:macos:*:*",
+                      "versionStartIncluding": "7.7.0",
+                      "versionEndExcluding": "7.8.7",
+                      "matchCriteriaId": "FB6DDAA6-EB40-4954-8CE8-04D85ED773E0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "https://support.1password.com/kb/202109/",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/kb/202109/",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "cve": {
+          "id": "CVE-2022-29868",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2022-05-09T19:15:07.933",
+          "lastModified": "2024-11-21T06:59:51.350",
+          "vulnStatus": "Modified",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "1Password for Mac 7.2.4 through 7.9.x before 7.9.3 is vulnerable to a process validation bypass. Malicious software running on the same computer can exfiltrate secrets from 1Password provided that 1Password is running and is unlocked. Affected secrets include vault items and derived values used for signing in to 1Password."
+            },
+            {
+              "lang": "es",
+              "value": "1Password para Mac versiones 7.2.4 hasta 7.9.x anteriores a 7.9.3, es vulnerable a una omisión de comprobación de procesos. El software malicioso que es ejecutado en el mismo equipo puede exfiltrar secretos de 1Password siempre que éste esté ejecutándose y esté desbloqueado. Los secretos afectados incluyen elementos de la bóveda y valores derivados usados para iniciar sesión en 1Password"
+            }
+          ],
+          "metrics": {
+            "cvssMetricV31": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "3.1",
+                  "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                  "baseScore": 5.5,
+                  "baseSeverity": "MEDIUM",
+                  "attackVector": "LOCAL",
+                  "attackComplexity": "LOW",
+                  "privilegesRequired": "LOW",
+                  "userInteraction": "NONE",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "HIGH",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "NONE"
+                },
+                "exploitabilityScore": 1.8,
+                "impactScore": 3.6
+              }
+            ],
+            "cvssMetricV2": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "2.0",
+                  "vectorString": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+                  "baseScore": 2.1,
+                  "accessVector": "LOCAL",
+                  "accessComplexity": "LOW",
+                  "authentication": "NONE",
+                  "confidentialityImpact": "PARTIAL",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "NONE"
+                },
+                "baseSeverity": "LOW",
+                "exploitabilityScore": 3.9,
+                "impactScore": 2.9,
+                "acInsufInfo": false,
+                "obtainAllPrivilege": false,
+                "obtainUserPrivilege": false,
+                "obtainOtherPrivilege": false,
+                "userInteractionRequired": false
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "CWE-312"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:macos:*:*",
+                      "versionStartIncluding": "7.2.4",
+                      "versionEndExcluding": "7.9.3",
+                      "matchCriteriaId": "FB837E4A-9B42-4C96-A4BF-5E91F8DF6975"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "https://support.1password.com/kb/202204/",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/kb/202204/",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "cve": {
+          "id": "CVE-2022-32550",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2022-06-15T19:15:11.933",
+          "lastModified": "2024-11-21T07:06:36.650",
+          "vulnStatus": "Modified",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "An issue was discovered in AgileBits 1Password, involving the method various 1Password apps and integrations used to create connections to the 1Password service. In specific circumstances, this issue allowed a malicious server to convince a 1Password app or integration it is communicating with the 1Password service."
+            },
+            {
+              "lang": "es",
+              "value": "Se ha detectado un problema en AgileBits 1Password, que afecta al método que usan varias aplicaciones e integraciones de 1Password para crear conexiones con el servicio de 1Password. En determinadas circunstancias, este problema permitía a un servidor malicioso convencer a una aplicación o integración de 1Password de que estaba comunicándose con el servicio de 1Password"
+            }
+          ],
+          "metrics": {
+            "cvssMetricV31": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "3.1",
+                  "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+                  "baseScore": 4.8,
+                  "baseSeverity": "MEDIUM",
+                  "attackVector": "NETWORK",
+                  "attackComplexity": "HIGH",
+                  "privilegesRequired": "NONE",
+                  "userInteraction": "NONE",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "LOW",
+                  "integrityImpact": "LOW",
+                  "availabilityImpact": "NONE"
+                },
+                "exploitabilityScore": 2.2,
+                "impactScore": 2.5
+              }
+            ],
+            "cvssMetricV2": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "2.0",
+                  "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+                  "baseScore": 5.8,
+                  "accessVector": "NETWORK",
+                  "accessComplexity": "MEDIUM",
+                  "authentication": "NONE",
+                  "confidentialityImpact": "PARTIAL",
+                  "integrityImpact": "PARTIAL",
+                  "availabilityImpact": "NONE"
+                },
+                "baseSeverity": "MEDIUM",
+                "exploitabilityScore": 8.6,
+                "impactScore": 4.9,
+                "acInsufInfo": false,
+                "obtainAllPrivilege": false,
+                "obtainUserPrivilege": false,
+                "obtainOtherPrivilege": false,
+                "userInteractionRequired": false
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "NVD-CWE-noinfo"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:android:*:*",
+                      "versionStartIncluding": "7.0",
+                      "versionEndExcluding": "7.9.3",
+                      "matchCriteriaId": "F9FE84D9-EF01-45B9-910A-5090D72AF496"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:macos:*:*",
+                      "versionStartIncluding": "7.0",
+                      "versionEndExcluding": "7.9.5",
+                      "matchCriteriaId": "9B919A7B-2244-4ACD-A7A9-2696958FE0DD"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:iphone_os:*:*",
+                      "versionStartIncluding": "7.0",
+                      "versionEndExcluding": "7.9.6",
+                      "matchCriteriaId": "34FCF50E-EFBB-4BDD-8EF1-E5E443216C37"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:windows:*:*",
+                      "versionStartIncluding": "7.0",
+                      "versionEndExcluding": "7.9.829",
+                      "matchCriteriaId": "1A74D8CF-5A00-4747-BB56-4E233307A98A"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:linux:*:*",
+                      "versionStartIncluding": "8.0",
+                      "versionEndExcluding": "8.7.1",
+                      "matchCriteriaId": "710035EA-D064-4241-9A31-D8E1D7D682FD"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:macos:*:*",
+                      "versionStartIncluding": "8.0",
+                      "versionEndExcluding": "8.7.1",
+                      "matchCriteriaId": "0A7105DF-D42D-4CF7-B02C-9DE38606B71B"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:windows:*:*",
+                      "versionStartIncluding": "8.0",
+                      "versionEndExcluding": "8.7.1",
+                      "matchCriteriaId": "B4330E40-FC8E-49E1-924B-DF1AFCB78CF3"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:iphone_os:*:*",
+                      "versionStartIncluding": "8.0",
+                      "versionEndExcluding": "8.8.0-94",
+                      "matchCriteriaId": "06F0237A-23B0-48D3-824F-1793C9685CAC"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:android:*:*",
+                      "versionStartIncluding": "8.0",
+                      "versionEndExcluding": "8.8.0-104",
+                      "matchCriteriaId": "E2E43DCC-660E-4949-B671-F75844CA7995"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password_in_the_browser:*:*:*:*:*:*:*:*",
+                      "versionEndExcluding": "2.3.4",
+                      "matchCriteriaId": "A2064373-9A1B-4941-B017-E1DBFCAA3806"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:command-line:*:*:*:*:*:*:*:*",
+                      "versionStartIncluding": "2.0.0",
+                      "versionEndExcluding": "2.3.0",
+                      "matchCriteriaId": "0084C97F-EF69-49AB-B6EA-338F33F75DB1"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:command_line_interface:*:*:*:*:*:*:*:*",
+                      "versionStartIncluding": "1.0.0",
+                      "versionEndExcluding": "1.12.5",
+                      "matchCriteriaId": "A0B75775-875C-447C-BF1B-AAFF02F6DB80"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:connect:*:*:*:*:*:*:*:*",
+                      "versionEndExcluding": "1.5.3",
+                      "matchCriteriaId": "B87C658D-34C0-4210-8622-2A126F608B74"
+                    },
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:scim_bridge:*:*:*:*:*:*:*:*",
+                      "versionEndExcluding": "2.3.2",
+                      "matchCriteriaId": "7DCE78D2-6FC6-4AC2-8A09-326150FB55F3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "https://support.1password.com/kb/202206/",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/kb/202206/",
+              "source": "af854a3a-2127-422b-91ae-364da2661108",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "cve": {
+          "id": "CVE-2024-42218",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2024-08-06T21:16:03.460",
+          "lastModified": "2024-08-12T18:27:54.660",
+          "vulnStatus": "Analyzed",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "1Password 8 before 8.10.38 for macOS allows local attackers to exfiltrate vault items by bypassing macOS-specific security mechanisms."
+            },
+            {
+              "lang": "es",
+              "value": "1Password 8 anterior a 8.10.38 para macOS permite a atacantes locales filtrar elementos de la bóveda eludiendo los mecanismos de seguridad específicos de macOS."
+            }
+          ],
+          "metrics": {
+            "cvssMetricV31": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "3.1",
+                  "vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                  "baseScore": 4.7,
+                  "baseSeverity": "MEDIUM",
+                  "attackVector": "LOCAL",
+                  "attackComplexity": "HIGH",
+                  "privilegesRequired": "LOW",
+                  "userInteraction": "NONE",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "HIGH",
+                  "integrityImpact": "NONE",
+                  "availabilityImpact": "NONE"
+                },
+                "exploitabilityScore": 1,
+                "impactScore": 3.6
+              },
+              {
+                "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+                "type": "Secondary",
+                "cvssData": {
+                  "version": "3.1",
+                  "vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+                  "baseScore": 6.3,
+                  "baseSeverity": "MEDIUM",
+                  "attackVector": "LOCAL",
+                  "attackComplexity": "HIGH",
+                  "privilegesRequired": "LOW",
+                  "userInteraction": "NONE",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "HIGH",
+                  "integrityImpact": "HIGH",
+                  "availabilityImpact": "NONE"
+                },
+                "exploitabilityScore": 1,
+                "impactScore": 5.2
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "NVD-CWE-noinfo"
+                }
+              ]
+            },
+            {
+              "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+              "type": "Secondary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "CWE-1289"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:macos:*:*",
+                      "versionStartIncluding": "8.0",
+                      "versionEndExcluding": "8.10.38",
+                      "matchCriteriaId": "36A2F56D-47CC-4FA9-800B-516B6F711137"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "https://app-updates.agilebits.com",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Release Notes"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/kb/202408/",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "cve": {
+          "id": "CVE-2024-42219",
+          "sourceIdentifier": "cve@mitre.org",
+          "published": "2024-08-06T21:16:03.560",
+          "lastModified": "2024-08-12T18:30:21.627",
+          "vulnStatus": "Analyzed",
+          "cveTags": [],
+          "descriptions": [
+            {
+              "lang": "en",
+              "value": "1Password 8 before 8.10.36 for macOS allows local attackers to exfiltrate vault items because XPC inter-process communication validation is insufficient."
+            },
+            {
+              "lang": "es",
+              "value": "1Password 8 anterior a 8.10.36 para macOS permite a atacantes locales filtrar elementos de la bóveda porque la validación de la comunicación entre procesos XPC es insuficiente."
+            }
+          ],
+          "metrics": {
+            "cvssMetricV31": [
+              {
+                "source": "nvd@nist.gov",
+                "type": "Primary",
+                "cvssData": {
+                  "version": "3.1",
+                  "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                  "baseScore": 7.8,
+                  "baseSeverity": "HIGH",
+                  "attackVector": "LOCAL",
+                  "attackComplexity": "LOW",
+                  "privilegesRequired": "LOW",
+                  "userInteraction": "NONE",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "HIGH",
+                  "integrityImpact": "HIGH",
+                  "availabilityImpact": "HIGH"
+                },
+                "exploitabilityScore": 1.8,
+                "impactScore": 5.9
+              },
+              {
+                "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+                "type": "Secondary",
+                "cvssData": {
+                  "version": "3.1",
+                  "vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                  "baseScore": 7,
+                  "baseSeverity": "HIGH",
+                  "attackVector": "LOCAL",
+                  "attackComplexity": "HIGH",
+                  "privilegesRequired": "LOW",
+                  "userInteraction": "NONE",
+                  "scope": "UNCHANGED",
+                  "confidentialityImpact": "HIGH",
+                  "integrityImpact": "HIGH",
+                  "availabilityImpact": "HIGH"
+                },
+                "exploitabilityScore": 1,
+                "impactScore": 5.9
+              }
+            ]
+          },
+          "weaknesses": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "NVD-CWE-noinfo"
+                }
+              ]
+            },
+            {
+              "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+              "type": "Secondary",
+              "description": [
+                {
+                  "lang": "en",
+                  "value": "CWE-1289"
+                }
+              ]
+            }
+          ],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "operator": "OR",
+                  "negate": false,
+                  "cpeMatch": [
+                    {
+                      "vulnerable": true,
+                      "criteria": "cpe:2.3:a:1password:1password:*:*:*:*:*:macos:*:*",
+                      "versionStartIncluding": "8.0",
+                      "versionEndExcluding": "8.10.36",
+                      "matchCriteriaId": "66FE5630-7C37-4710-8CEE-4CC46919B808"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "url": "https://app-updates.agilebits.com",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Release Notes"
+              ]
+            },
+            {
+              "url": "https://support.1password.com/kb/202408a/",
+              "source": "cve@mitre.org",
+              "tags": [
+                "Vendor Advisory"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
