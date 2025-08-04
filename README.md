@@ -59,11 +59,7 @@ cd "before ai"
 python3 test_main_before_ai.py
 ```
 
-### After AI Tests
-```bash
-cd "after ai"
-python3 -m unittest test_main.py -v
-```
+**Note:** The "after ai" implementation currently has no test file. Tests are only available for the "before ai" version.
 
 ## 📊 Sample Output
 
@@ -89,8 +85,7 @@ Application Name,CVE ID,CVSS Score
 │   ├── main_before_ai.py          # Simple CVE fetcher
 │   └── test_main_before_ai.py     # Basic tests
 ├── after ai/
-│   ├── main.py                    # Advanced CVE fetcher
-│   └── test_main.py               # Comprehensive tests
+│   └── main.py                    # Advanced CVE fetcher
 ├── json.json                      # Sample NVD API response
 └── README.md                      # This file
 ```
@@ -100,8 +95,8 @@ Application Name,CVE ID,CVSS Score
 This project demonstrates:
 - **API Integration** - Working with REST APIs and JSON data
 - **Data Filtering** - Complex nested data structure navigation
-- **Testing** - Both simple and unittest-based testing approaches
-- **Code Evolution** - From simple scripts to modular, testable code
+- **Testing** - Simple, human-readable testing approach ("before ai" version)
+- **Code Evolution** - From simple scripts to advanced, feature-rich applications
 - **Platform Detection** - Parsing CPE criteria for OS identification
 
 ## 🔍 Technical Details
